@@ -11,7 +11,6 @@ ADD ./ci/ ./ci/
 
 # Install necessary software
 RUN ./ci/install-chrome.sh && \
-    ./ci/install-firefox.sh && \
     ./ci/install-java.sh && \
     rm -rf ci/ && \
     npm install -g --unsafe-perm bower polymer-cli
